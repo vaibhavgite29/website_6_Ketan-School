@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "catamaran", sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+:root {
+    --bg-light-orange: #fdf6ed;
+}
+
+/* Universal CSS Start */
+.text-orange {
+    color: #EA512E;
+}
+
+.text-black {
+    color: #1B0238;
+}
+
+.text-silver {
+    color: #6B6B84;
+}
+
+.bg-orange {
+    background: #EA512E;
+}
+
+.bg-lite-orange {
+    background: #fdf6ed;
+}
+
+.bg-lite-yellow {
+    background: #fee9ca;
+}
+
+.bg-yellow {
+    background: #f5890d !important;
+}
+
+
+.mt-15 {
+    margin-top: 150px;
+}
+
+.mt-20 {
+    margin-top: 100px;
+}
+
+.pt-10 {
+    padding-top: 100px;
+}
+
+.pb-7 {
+    padding-bottom: 70px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    background: #EA512E;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #f5890d;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #1b0238;
+    font-family: "catamaran", sans-serif;
+    font-weight: bold;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+/* Universal CSS End */
+
+/* Header Section Start */
+a.active {
+    color: #EA512E !important;
+}
+
+.dropdown-menu {
+    width: 280px;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 16px;
+}
+
+a.nav-link:hover,
+a.dropdown-item:hover {
+    color: #ea512e !important;
+    transition: 0.2s linear;
+}
+
+.lang {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.navbar .navbar-nav .nav-item a {
+    color: #1b0238;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Header Section end */
+
+/* Banner Section Start */
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.banner-content{
+    position: absolute;
+    top: 22%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1199px){
+    .banner-content{
+        position: relative;
+        top: 5%;
+        width: 50%;
+    }
+
+}
+
+.shape-1 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+
+.shape-2 {
+    top: 3.5%;
+    left: 50%;
+    animation: move2 2s linear alternate infinite;
+}
+
+.shape-3 {
+    top: 61%;
+    left: .7%;
+    z-index: 5;
+    animation: move 2s linear alternate infinite;
+}
+
+.shape-4 {
+    top: 12%;
+    left: 560px;
+    z-index: 1;
+    margin-top: 480px;
+    animation: move4 4s linear infinite alternate;
+}
+
+.banner h1 {
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #1B0238;
+}
+
+/* Banner Section End */
+/* Who We Are Start */
+.who span,
+.popular span,
+.core-values span,
+.teacher span,
+.testimonial span,
+.testis span,
+.upcoming span,
+.news span {
+    font-weight: 600;
+    font-size: 20px;
+    color: #EA512E;
+    font-family: "Sacramento", cursive !important;
+}
+
+.who h3,
+.popular h3,
+.core-values h3,
+.teacher h3,
+.testimonial h3,
+.testis h3,
+.upcoming h3,
+.news h3 {
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.who .image {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.who .image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ea512e;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 30s linear infinite alternate forwards;
+}
+
+.who .image img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.who .image::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f5890d;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 10s linear infinite alternate forwards;
+}
+
+
+.who ul li {
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.who ul li span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #EA512E;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    transition: all 0.5s;
+    line-height: 30px;
+    margin-right: 8px;
+    font-family: "catamaran", sans-serif !important;
+}
+
+.who ul li:hover span {
+    background: #f5890d;
+    transition: all 0.5s;
+
+}
+.who-shape {
+    position: absolute;
+    right: 5%;
+    top: 35px;
+    max-width: 120px;
+    animation: moveLeftBounce 3s alternate infinite;
+}
+@keyframes moveLeftBounce {
+    0% {translate: 0px 0px;}
+    100% {translate: 30px 0px;}
+  }
+/* Who We Are End */
+
+/* Popular Section Start */
+.popular .card:hover img {
+    transform: rotate(2deg) scale(1.07);
+    transition: all 0.3s linear;
+}
+
+.carda:hover .rate {
+    background-color: #ff9a27 !important;
+    transition: all 0.3s ease;
+}
+
+.cardb:hover .effect {
+    color: #ea512e !important;
+    transition: all 0.6s ease;
+}
+
+.carda span {
+    font-family:'Times New Roman', Times, serif !important;
+}
+/* Popular Section End */
+
+/* Core Values section Start */
+.core-values .number {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    margin-top: 1.5%;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #1b0238;
+    display: inline-block;
+    border: 3px solid #fff;
+    outline: 1px solid #99f3c9;
+    outline-offset: 2px;
+    transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.core-values .number:hover {
+    color: #fff;
+    background: #EA512E !important;
+    outline: 1px solid #EA512E;
+    transition: o.5s;
+}
+
+.value-shape .shape-11 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: -1;
+}
+
+.value-shape .shape-22 {
+    position: absolute;
+    left: 20px;
+    z-index: -1;
+    bottom: 30px;
+}
+
+.value-shape .shape-33 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+/* Core Values section End */
+
+/* Teacher Section Start */
+.teacher {
+    background: url(../img/teacher-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9 !important;
+}
+
+.teacher .social-media {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -70px;
+    transition: all 0.5s ease-in;
+}
+
+.teacher .teacher-img {
+    z-index: 9 !important;
+}
+
+.teacher .teacher-img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ea512e;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.5s;
+    animation: border-transform-default 10s linear infinite alternate forwards;
+}
+
+.teacher .teacher-img:hover .social-media {
+    margin-bottom: 0px;
+    transition: all 0.5s ease-out;
+}
+
+.teacher .social-media li {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    background: #EA512E;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.teacher .social-media li a {
+    color: #fff;
+}
+
+.teacher .social-media li:hover {
+    background: #f5890d;
+    transition: 0.3s ease;
+}
+
+/* Teacher Section End */
+
+/* Testimonial Section start */
+.card.teach {
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #fee9ca;
+}
+
+.card.teach h3 {
+    font-size: 25px;
+}
+
+.card.teach div {
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    line-height: 75px;
+    background: #FFF;
+    margin: auto;
+    transition: all 0.3s linear;
+    margin-bottom: 10px;
+}
+
+.card.teach:hover div {
+    background: #EA512E;
+    transition: all 0.3s linear;
+}
+
+.card.teach:hover div .fa-quote-left {
+    color: #fff !important;
+    transition: all 0.3s linear;
+}
+
+.testimonial .nav-btn button {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 10px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    background: #EA512E;
+    transition: 0.3s linear;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.testimonial .nav-btn button:hover {
+    background: #f5890d;
+    transition: 0.3s linear;
+}
+.slider-wrap{
+    position: relative;
+    overflow-x: hidden;
+    height: 500px;;
+}
+.slider-main{
+    position: absolute;
+    width:250%;
+}
+/* Testimonial Section end */
+
+/* Upcoming event Section Start */
+.upcoming {
+    position: relative;
+    background: url(../img/event-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Upcoming event Section End */
+
+/* News And Blog Section Start */
+.news .blog:hover img {
+    transform: rotate(2deg) scale(1.07);
+    transition: all 0.3s linear;
+}
+.cardb:hover .effect {
+    color: #ea512e !important;
+    transition: all 0.6s ease;
+}
+
+.blog span  {
+    font-family: 'Times New Roman', Times, serif
+}
+.news .admin span{
+    color: #EA512E;
+    font-family: "catamaran", sans-serif !important;
+    font-size: 18px;
+}
+.news .admin a{
+    color:#1B0238;
+    font-family: "catamaran", sans-serif !important;
+    text-decoration: none;
+}
+.news .admin li{
+    margin-right: 15px;
+}
+/* News And Blog Section End */
+
+/*Footer Scetion Start  */
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/footer-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+footer .social {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: #EA512E;
+}
+
+footer h3::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #EA512E;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+footer .foot li a {
+    color: #fff;
+}
+
+footer .foot li:hover {
+    background: #f5890d;
+    transition: 0.3s ease;
+}
+
+footer .contact a:hover {
+    color: #EA512E !important;
+    transition: 0.5s;
+}
+
+footer .contact a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #EA512E;
+    transition: 0.5s;
+}
+footer .contact a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+    background-color: #EA512E;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:6px;
+}
+.gimg{
+    transition: 0.6s all ease;
+}
+.photo:hover .gimg{
+    transform: scale(1.2);
+    
+}
+.area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #091629;
+}
+.white{
+    color: #fff;
+}
+
+
+/*Footer Scetion End  */
+
+
+/* Animation Section Start */
+div.rotates {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px 10px 42px;
+    background-color: goldenrod;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rotates 2s linear infinite alternate;
+}
+
+
+
+/* Animation Section End */
+
+@keyframes move {
+    0% {}
+
+    100% {
+        left: 3%
+    }
+
+}
+
+@keyframes move2 {
+    0% {}
+
+    100% {
+        left: 53%;
+    }
+}
+
+@keyframes move3 {
+    0% {}
+
+    100% {
+        top: 75%
+    }
+}
+@keyframes move4 {
+    1% { top: 1% }
+    0% { bottom: 1% }
+}
+
+@keyframes border-transform-default {
+
+    0%,
+    100% {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+
+    }
+
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+}
+
+@keyframes rotates {
+    0% {
+        transform: scaled(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -3deg);
+    }
+
+}
+
+/* About Page CSS Start */
+.about-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.breadcrumb-item.active{
+    color: #EA512E;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #EA512E;
+    content: "|";
+}
+/* About Page CSS End */
+
+/* Pricing Page CSS Start */
+.pricing-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Pricing Page CSS Start */
+
+/* Gallary Page CSS Start */
+.gallary-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Gallary Page CSS Start */
+
+/* teacher Page CSS Start */
+.teacher-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* teacher Page CSS Start */
+
+/* Teachersdetails Page CSS Start */
+.teachersdetails-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-5.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Teachersdetails Page CSS end */
+
+/* Event Page CSS Start */
+.event-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Event Page CSS End */
+
+/* Eventdetails Page CSS Start */
+.eventdetails-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Eventdetails Page CSS End */
+
+
+
+/* class Page CSS Start */
+.class-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* class Page CSS End */
+
+/* classdetails Page CSS Start */
+.classdetails-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-5.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* classdetails Page CSS End */
+
+/* Blog Page CSS Start */
+.blog-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Blog Page CSS End */
+
+/* Blog-details Page CSS Start */
+.blogdetails-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Blog-details CSS End */
+
+/* Contact Page CSS Start */
+.contact-banner{
+    width: 100%;
+    padding: 250px 0px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/page-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/* Contact Page CSS End */
+
